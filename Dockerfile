@@ -4,8 +4,8 @@
 
 # we explicitly specify an amd64 platform as I often build on Apple Silicon
 # machines where the default of arm64 breaks things. I believe the alternative
-# (and possibly better option as it would avoid emulation) is to use NDK 24 and
-# above, see: https://stackoverflow.com/a/69541958
+# (and possibly better option) is to use NDK 24 and above, see:
+# https://stackoverflow.com/a/69541958
 FROM  --platform=linux/amd64 ubuntu:20.04 AS build
 
 ENV ANDROID_SDK_ROOT /app/android-sdk-linux
